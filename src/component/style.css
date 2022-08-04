@@ -1,0 +1,34 @@
+
+/* card css */
+.card{
+    margin: 20px;
+}
+.cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+    flex-wrap: wrap;
+    margin: 50px;
+}
+.name dish{
+    font-size: 100px;
+}
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.btn h6{
+    font-size: 30px;
+}
+.btn button{
+    width: 110px;
+}
+/* nav bar css */
+
+@media(min-width: 850px){
+    .me-auto{
+        margin-left: 400px;
+    }
+}
