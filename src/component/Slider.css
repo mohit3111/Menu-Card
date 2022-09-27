@@ -1,0 +1,58 @@
+.banner{
+        /* margin-top: 60px; */
+    width: 100%;
+    height: 70vh;
+   object-fit: contain;
+   
+}
+
+.shirt-btn{
+       margin-right: 0px;
+       margin-bottom: 0px;
+
+}
+.jeans-btn{  
+      
+        border-radius: 8px;
+        width: 140px;
+        height: 40px;
+        background-color: rgb(7, 50, 88);
+        opacity: 0.9;
+        color: antiquewhite;
+        border: 0px solid transparent;
+}
+.jeans-btn:hover{
+        opacity: 1;
+        transition: 0.5s;
+        width: 143px;
+        height: 43px;
+}
+.shirt-btn{
+        margin-bottom: 15.5%;
+        margin-right: 71%;
+        border-radius: 8px;
+        width: 140px;
+        height: 40px;
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+        border: 0px solid transparent;
+}
+.shirt-btn:hover{
+        transition: 0.5s;
+        width: 143px;
+        height: 43px;
+}
+.shoes-btn{
+        margin-bottom: 40px;
+        border-radius: 8px;
+        width: 140px;
+        height: 40px;
+        background-color: #61C8AA;
+        color: rgb(255, 255, 255);
+        border: 0px solid transparent;
+}
+.shoes-btn:hover{
+        transition: 0.5s;
+        width: 143px;
+        height: 43px;
+}

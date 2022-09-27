@@ -1,34 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
 
-/* card css */
-.card{
-    margin: 20px;
+body {
+    overflow-x: hidden;
 }
-.cards {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;   
-    flex-wrap: wrap;
-    margin: 50px;
+
+/* nav bar */
+.main {
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
 }
-.name dish{
-    font-size: 100px;
-}
-.btn{
+
+.navBar {
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 4;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 2rem 0 rgb(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
+ height: 60px;
+ /* margin-top: 8px; */
 
 }
-.btn h6{
-    font-size: 30px;
-}
-.btn button{
-    width: 110px;
-}
-/* nav bar css */
 
-@media(min-width: 850px){
-    .me-auto{
-        margin-left: 400px;
+.logo {
+    margin-left: 70px;
+    height: 42px;
+    width: 179px;
+}
+
+.links {
+    margin-right: 50px;
+}
+
+.link {
+    margin: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 23px;
+}
+
+.link:hover {
+    color: gray;
+}
+
+.icons {
+    margin-right: 70px;
+}
+
+.Super {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #017F81;
+    margin-top: 60px;
+    color: white;
+    height: 28px;
+}
+
+@media only screen and (max-width: 1399px) {
+    .link{
+        flex-direction: column;
     }
+   .links{
+    margin-right: 0px;
+   }
+   .logo{
+    margin-left: 3px;
+   }
+   .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{ 
+    flex-wrap: nowrap;
+   }
+} 
+/* Home Page */
+.home-page{
+    width: 100%;
+    box-sizing: border-box;
+}
+.topproducts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    font-size: 50px;
+    background-color: rgba(128, 128, 128, 0.096);
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.cards {
+    margin: 20px;
+    height: px;
+}
+
+/* .newsLetter */
+
+.newsLetter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+    width: 100vw;
+    margin-bottom: 20px;
+
+}
+
+.newsLetter h1 {
+    font-size: 80px;
+}
+
+.newsLetter p {
+    font-size: 20px;
+}
+
+.input input {
+    padding-left: 10px;
+    width: 30vw;
+    height: 40px;
+}
+
+.input img {
+    height: 36px;
+    width: 50px;
+}
+
+.input {
+
+    display: flex;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+}
+
+
+/* product cart */
+.products {
+    padding: 29px;
+}
+
+.product-cart-img {
+    width: 290px;
+    height: 340px;
+    cursor: pointer;
+}
+
+.cards {
+  
+    background: linear-gradient(135, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+   
+}
+
+.product-text {
+    margin-left: 8px;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-top: -33px;
+    width: 304px;
+    z-index: 5;
+    /* text-align: center; */
+    opacity: 0;
+    transition: 1s;
+    background-color: #ffffff7b;
+    height: 33px;
+}
+
+
+.container1:hover .button {
+    opacity: 1;
+}
+
+.container1{
+    overflow: hidden;
+    object-fit: contain;
+}
+.product-cart-img{
+    transition: 1s;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.product-cart-img:hover{
+    filter: grayscale(50%);
+    transform: scale(1.1) rotate(-1deg)
+}
+
+
+.cart-btn {
+    font-size: 17px;
+}
+
+.button Button {
+    width: 110px;
+    background-color: #017f8100;
+    border: none;
+}
+
+.button Button:hover {
+    background-color: #ffffff62;
+    /* border: 1px solid rgb(255, 255, 255); */
+    border-radius: 10px;
+    transition: 00.7s;
+    padding: 0px;
+}
+
+.card-item-name {
+    font-size: 25px;
+    margin-left: -10px;
+    margin-top: 20px;
+}
+
+.card-item-title {
+    font-size: 19px;
+}
+
+.card-item-price {
+    position: relative;
+    top: -18px;
+    font-size: 22px;
+}
+
+
+.contect{
+    flex-direction: column;
+    margin: 50px;
 }
